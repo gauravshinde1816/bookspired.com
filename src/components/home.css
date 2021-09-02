@@ -1,0 +1,70 @@
+.home .landing-page {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background: url("../assets/landing-bg.jpg");
+  background-position: center;
+  background-size: contain;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home .overlay {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+}
+
+.home .landing-page .title {
+  font-size: 100px;
+  font-weight: bold;
+  position: relative;
+  z-index: +1;
+}
+
+@media (max-width: 800) {
+  .home .landing-page .title {
+    font-size: 32px;
+  }
+}
+
+.blogs-container {
+  width: 100%;
+  padding-block: 20px;
+  text-align: center;
+}
+
+.home .blog {
+  display: inline-block;
+  width: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.home .blog img {
+  width: 100%;
+  height: 300px;
+}
+
+.home .blog .author {
+  text-align: left;
+  width: 100%;
+  padding-inline: 10px;
+  font-size: 15px;
+  margin-block: 10px;
+}
+
+.home .blog .desc {
+  margin-bottom: 10px;
+  text-align: justify;
+  padding-inline: 10px;
+}
