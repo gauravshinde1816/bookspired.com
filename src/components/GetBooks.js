@@ -3,7 +3,7 @@ import axios from "axios";
 const GetBooks = () => {
   useEffect(async () => {
     const res = await axios.get(
-      "https://www.googleapis.com/books/v1/volumes?q=mythology&key=AIzaSyB-TKEZKxfZtGrLr7S6b8ZnaZ-SXJewH5E"
+      "https://www.googleapis.com/books/v1/volumes?q=Mythological Fiction Books&key=AIzaSyB-TKEZKxfZtGrLr7S6b8ZnaZ-SXJewH5E"
     );
 
     // console.log(res.data.items);
