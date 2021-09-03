@@ -3,6 +3,7 @@ import { Link, NavLink, Route, Switch } from "react-router-dom";
 import GetBooks from "./components/GetBooks";
 import CommunityReading from "./components/CommunityReading";
 import Home from "./components/home";
+import TextEditor from "./components/Editor";
 import "./App.css";
 // AIzaSyCDy3IAjGQcPaK1kVuQI08AXo_kBcg-Z1M
 const BookCollection = () => {
@@ -42,6 +43,9 @@ const App = () => {
             <li class="nav-item mx-3">
               <NavLink to="/conversations">Conversations</NavLink>
             </li>
+            <li class="nav-item mx-3">
+              <NavLink to="/blogs">Blogs</NavLink>
+            </li>
           </ul>
         </div>
       </nav>
@@ -49,6 +53,7 @@ const App = () => {
         <Link component={BookCollection} path="/bookcollection" />
         <Link component={CommunityReading} path="/communityreading" />
         <Link component={Conversations} path="/conversations" />
+        <Link component={TextEditor} exact path="/blogs" />
         <Link component={Home} path="/" />
       </Switch>
     </>
