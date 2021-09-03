@@ -1,15 +1,14 @@
 import React from "react";
 import { Link, NavLink, Route, Switch } from "react-router-dom";
 import GetBooks from "./components/GetBooks";
-import Home from './components/home';
-import './App.css';
-
+import CommunityReading from "./components/CommunityReading";
+import Home from "./components/home";
+import "./App.css";
+// AIzaSyCDy3IAjGQcPaK1kVuQI08AXo_kBcg-Z1M
 const BookCollection = () => {
   return <div>Book Collection</div>;
 };
-const CommunityReading = () => {
-  return <div>Community Reading</div>;
-};
+
 const Conversations = () => {
   return <div>Conversations</div>;
 };
